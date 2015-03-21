@@ -4,7 +4,7 @@ from django.contrib import admin
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'centech2.views.home', name='home'),
-    url(r'^centech/', include('tablebord.urls')),
-    #url(r'^centech/', include('tablebord.urls', namespace="tablebord")),
+    #url(r'^centech/', include('tablebord.urls')),
+    url(r'^centech/', include('tablebord.urls', namespace="centech")),
     url(r'^admin/', include(admin.site.urls)),
 )
